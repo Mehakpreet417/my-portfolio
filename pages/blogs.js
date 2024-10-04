@@ -1,5 +1,5 @@
 // pages/blog.js
-import BlogsLayout from '../src/layouts/HomeLayout';
+import BlogsLayout from '../src/layouts/BlogsLayout';
 import BlogSection from '../src/sections/Blogs/Blogs';
 
 export default function BlogPage() {
