@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "What does it take to become a web developer?",
+      "description": "Web development, also known as website development, encompasses a variety of tasks and processes involved in creating websites for the internet...",
+      "category": "Web Developer",
+      "author": "Sinan",
+      "date": "10 Oct 2023",
+      "readTime": "1 Min",
+      "image": "/images/blog1.jpg",
+      "link": "/blogs/web-developer"
+    },
+    {
+      "id": 2,
+      "title": "How to improve your coding skills?",
+      "description": "Improving coding skills takes practice, patience, and consistency. Learn how to practice coding and improve problem-solving abilities...",
+      "category": "Coding",
+      "author": "Sinan",
+      "date": "12 Oct 2023",
+      "readTime": "2 Mins",
+      "image": "/images/blog2.jpg",
+      "link": "/blogs/coding-skills"
+    },
+    {
+      "id": 3,
+      "title": "Understanding JavaScript Closures",
+      "description": "Closures are one of the most important concepts in JavaScript. Mastering closures will help you understand how variables...",
+      "category": "JavaScript",
+      "author": "Sinan",
+      "date": "15 Oct 2023",
+      "readTime": "3 Mins",
+      "image": "/images/blog3.jpg",
+      "link": "/blogs/js-closures"
+    }
+  ]
+  
