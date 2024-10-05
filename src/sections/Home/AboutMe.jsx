@@ -1,7 +1,7 @@
 // components/AboutMe.js
 export default function AboutMe() {
   return (
-    <section className="flex p-[6.67vw] flex-col items-center justify-center">
+    <section className="flex p-[6.67vw] flex-col items-center justify-center bg-[#1A1E23]">
 
       <div className="flex flex-col gap-[6.67vw] items-center justify-center">
         {/* Background pattern */}

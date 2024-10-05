@@ -1,18 +1,20 @@
 import SectionTitle from "@/components/SectionTitle";
+import WorkCard from "@/components/WorkCard";
+
 
 // components/Works.js
 export default function Works() {
   return (
     <section
       id="works"
-      className="flex p-[6.67vw] flex-col items-center self-stretch"
+      className="flex p-[6.67vw] flex-col items-center self-stretch bg-[#1A1E23]"
     >
       <SectionTitle
         title="Works"
         paragraph="I had the pleasure of working with these awesome projects"
       />
       {/* Project Display */}
-      <div className="flex items-center justify-center gap-[3.33vw]">
+      <div className="flex max-w-[35vw] mx-[7vw] items-center justify-center gap-[3.33vw]">
         {/* Left Arrow */}
         <button className="hidden lg:block p-3 bg-gray-800 rounded-full hover:bg-gray-700">
           <svg
@@ -34,36 +36,10 @@ export default function Works() {
         {/* Computer Screens */}
         <div className="flex justify-center items-center space-x-12">
           {/* Coding Screen */}
-          <div className="relative flex flex-col items-center">
-            <img
-              src="/images/Home/Dual-screen.png"
-              alt="Monitor with Code"
-              className="w-[33.8vw] h-[22.5vw]"
-            />
-            <div className="flex flex-col justify-center items-center absolute top-[2.5vw] right-[5vw] items-start gap-[0.28vw]">
-              <a
-                href="#"
-                className="text-[#12F7D6] font-plexMono text-[1.65vw] font-normal leading-[2.2vw] capitalize"
-              >
-                View Website
-              </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11.98vw"
-                height="0.21vw"
-                viewBox="0 0 174 3"
-                fill="none"
-              >
-                <path
-                  d="M0.74646 1.43677H173.746"
-                  stroke="white"
-                  stroke-width="0.14vw"
-                />
-              </svg>
-            </div>
-          </div>
+          <WorkCard heading="Restaurent Website" link="https://my-restaurant-app-three.vercel.app/" img1="/images/Home/Works/restaurant-small.png" img2="/images/Home/Works/restaurant-large.png"/>
+          <WorkCard heading="tinDog" link="https://tin-dog-wine.vercel.app/" img1="/images/Home/Works/tindog-small.png" img2="/images/Home/Works/tindog-large.png"/>
+          <WorkCard heading="Notes Keeper" link="https://q5pcdv.csb.app/" img1="/images/Home/Works/notes-small.png" img2="/images/Home/Works/notes-large.png"/>
         </div>
-
         {/* Right Arrow */}
         <button className="hidden lg:block p-3 bg-gray-800 rounded-full hover:bg-gray-700">
           <svg
