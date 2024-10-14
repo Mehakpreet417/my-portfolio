@@ -25,7 +25,7 @@ export default function Header() {
 </Link> */}
 
         {/* Search Input */}
-        <div className="relative">
+        {/* <div className="relative">
           <input
             type="text"
             placeholder="Search"
@@ -47,7 +47,7 @@ export default function Header() {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
 
         {/* Social Media Icons */}
         <div className="flex gap-[1.67vw]">
