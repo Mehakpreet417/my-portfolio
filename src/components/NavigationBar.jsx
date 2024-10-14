@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 
 const NavigationBar = () => {
   const [activeSection, setActiveSection] = useState("home");
-  const sections = ["home", "about", "skills", "works", "blogs", "contact"];
+  // const sections = ["home", "about", "skills", "works", "blogs", "contact"];
+  const sections = ["home", "about", "skills", "works", "contact"];
 
   const sectionRefs = useRef({});
 
@@ -117,7 +118,7 @@ const NavigationBar = () => {
                 d="M13 18H20C21.6569 18 23 16.6569 23 15V5C23 3.34315 21.6569 2 20 2H4C2.34315 2 1 3.34315 1 5V15C1 16.6569 2.34315 18 4 18H11V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V18ZM4 4C3.44772 4 3 4.44772 3 5V15C3 15.5523 3.44772 16 4 16H20C20.5523 16 21 15.5523 21 15V5C21 4.44772 20.5523 4 20 4H4Z"
               />
             )}
-            {index === 4 && (
+            {/* {index === 4 && (
               <>
                 <path
                   fill-rule="evenodd"
@@ -126,8 +127,8 @@ const NavigationBar = () => {
                 />
                 <path d="M4 3C3.20435 3 2.44129 3.31607 1.87868 3.87868C1.31607 4.44129 1 5.20435 1 6V20C1 20.7957 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H18C18.7957 23 19.5587 22.6839 20.1213 22.1213C20.6839 21.5587 21 20.7957 21 20V13C21 12.4477 20.5523 12 20 12C19.4477 12 19 12.4477 19 13V20C19 20.2652 18.8946 20.5196 18.7071 20.7071C18.5196 20.8946 18.2652 21 18 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V6C3 5.73478 3.10536 5.48043 3.29289 5.29289C3.48043 5.10536 3.73478 5 4 5H11C11.5523 5 12 4.55228 12 4C12 3.44772 11.5523 3 11 3H4Z" />
               </>
-            )}
-            {index === 5 && (
+            )} */}
+            {index === 4 && (
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
