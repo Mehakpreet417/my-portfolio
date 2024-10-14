@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 const WorkCard = ({ heading, link, img1, img2}) => {
+
   return (
     <div className="relative flex flex-col items-center">
         <div >

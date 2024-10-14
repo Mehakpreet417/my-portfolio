@@ -4,6 +4,15 @@ import Button from "@/components/Button";
 import DownloadIcon from "../../../public/icons/download.svg";
 
 const DeveloperProfile = () => {
+  const handleDownloadCV = () => {
+    // Link to your CV file
+    const link = document.createElement("a");
+    link.href = "/data/Resume_Mehak_Frontend.pdf"; // Replace with the actual path
+    link.download = "Mehakpreet_Chopra_CV.pdf"; // Optional: Rename the file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Clean up the element after the download
+  };
   return (
     <div className="flex flex-col ">
       <div className="px-[6.67vw] bg-[#292F36]">
@@ -12,7 +21,6 @@ const DeveloperProfile = () => {
 
       <div className="flex flex-col relative py-[3.33vw] px-[6.67vw] justify-center items-center self-stretch bg-[#292F36]">
         {/* Sidebar */}
-      
 
         <div>
           <h1 className="text-[#98FAEC] font-ubuntu text-[6.09vw] font-normal leading-[6.98vw] capitalize">
@@ -22,7 +30,7 @@ const DeveloperProfile = () => {
         <div className="flex pt-[3.33vw] px-[6.67vw] gap-[6.67vw]">
           {/* Main Content */}
           {/* Left Section */}
-          <div className="flex w-[30%] gap-[1.67vw] p-[1.25vw] flex-col justify-center items-start rounded-[160px_0] border-4 border-white bg-[#292F36] shadow-[4px_-4px_2px_0px_#12F7D6]">
+          <div className="flex w-[30%] gap-[1.67vw] p-[2vw] flex-col justify-center items-start rounded-[160px_0] border-4 border-white bg-[#292F36] shadow-[4px_-4px_2px_0px_#12F7D6]">
             <div className="flex flex-col gap-[1.67vw]">
               <div className="flex flex-col justify-center items-center">
                 <img
@@ -30,15 +38,15 @@ const DeveloperProfile = () => {
                   alt="Profile"
                   className="w-20 h-20 rounded-full"
                 />
-                <h2 className="text-white font-plexMono text-[32px] font-medium leading-[42px] capitalize">
+                <h2 className="text-white font-plexMono text-[1.667vw] font-medium leading-[2.19vw] capitalize whitespace-nowrap">
                   Mehakpreet Chopra
                 </h2>
-                <p className="text-white font-plexMono text-[14px] font-normal leading-[18px]">
-                  Full-stack developer
+                <p className="text-white font-plexMono text-[0.73vw] font-normal leading-[0.94vw]">
+                  Frontend Developer
                 </p>
               </div>
               <div className="text-left flex flex-col gap-[0.83vw] ">
-                <div className="text-white font-plexMono text-[14px] font-normal leading-[18px] inline-flex gap-[0.83vw]">
+                <div className="text-white font-plexMono text-[0.73vw] font-normal leading-[0.94vw] inline-flex gap-[0.83vw]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
@@ -55,7 +63,7 @@ const DeveloperProfile = () => {
                   </svg>
                   <p>chopramehakpreet@gmail.com</p>
                 </div>
-                <div className="text-white font-plexMono text-[14px] font-normal leading-[18px] inline-flex gap-[0.83vw]">
+                <div className="text-white font-plexMono text-[0.73vw] font-normal leading-[0.94vw] inline-flex gap-[0.83vw]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
@@ -78,7 +86,7 @@ const DeveloperProfile = () => {
                   </svg>
                   <p>Punjab, India</p>
                 </div>
-                <div className="text-white font-plexMono text-[14px] font-normal leading-[18px] inline-flex gap-[0.83vw]">
+                <div className="text-white font-plexMono text-[0.73vw] font-normal leading-[0.94vw] inline-flex gap-[0.83vw]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
@@ -95,7 +103,7 @@ const DeveloperProfile = () => {
                   </svg>
                   <p>Full-time / Freelancer</p>
                 </div>
-                <div className="text-white font-plexMono text-[14px] font-normal leading-[18px] inline-flex gap-[0.83vw]">
+                <div className="text-white font-plexMono text-[0.73vw] font-normal leading-[0.94vw] inline-flex gap-[0.83vw]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
@@ -119,14 +127,20 @@ const DeveloperProfile = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <a href="http://www.sinantokmak.com">www.sinantokmak.com</a>
+                  <a href="https://my-portfolio-seven-pi-25.vercel.app/">
+                    Portfolio
+                  </a>
                 </div>
               </div>
-              <div className="flex gap-[0.83vw] items-start">
+              <div className="flex gap-[0.83vw] items-start flex-wrap">
                 <Tag name="HTML" type="primary" />
                 <Tag name="CSS" type="primary" />
                 <Tag name="JS" type="primary" />
                 <Tag name="REACT" type="primary" />
+                <Tag name="NextJS" type="primary" />
+                <Tag name="Vite" type="primary" />
+                <Tag name="SQL" type="primary" />
+                <Tag name="C++" type="primary" />
               </div>
             </div>
             <Button
@@ -134,6 +148,7 @@ const DeveloperProfile = () => {
               icon={<DownloadIcon />}
               bgColor="bg-[#FFF]"
               borderColor="border-[#FFF]"
+              onClick={handleDownloadCV}
             />
           </div>
 
@@ -148,7 +163,7 @@ const DeveloperProfile = () => {
                   Hey
                   <br />
                   I'm <span className="text-[#12F7D6]">Mehakpreet</span>,<br />
-                  Full-Stack Developer
+                  Frontend Developer
                 </h1>
                 <span className="text-[#98FAEC] font-plexMono text-[0.73vw] font-normal leading-[0.94vw]">
                   {"</h1>"}
@@ -165,10 +180,13 @@ const DeveloperProfile = () => {
                 <span className="text-[#98FAEC] font-plexMono text-[0.73vw] font-normal leading-[0.94vw]">
                   {"</p>"}
                 </span>
-                <button className="text-[#12F7D6] font-plexMono text-[1.67vw] font-medium leading-[2.19vw] capitalize gap-[0.83vw] ">
-                  <span className="pl-[1.25vw]">Let's Talk </span>
+                <a
+                  href="mailto:chopramehakpreet@gmail.com"
+                  className="text-[#12F7D6] font-plexMono text-[1.67vw] font-medium leading-[2.19vw] capitalize gap-[0.83vw] flex items-center"
+                >
+                  <span className="pl-[1.25vw]">Let's Talk</span>
                   <i className="fas fa-envelope ml-2"></i>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -176,7 +194,7 @@ const DeveloperProfile = () => {
             <div className="flex flex-col p-[2.5vw_1.67vw] justify-center items-start gap-[2.5vw] rounded-[4.17vw] bg-[#1A1E23] shadow-[2px_2px_4px_rgba(0,0,0,0.25)]">
               <div className="flex items-center gap-4">
                 <h3 className="text-[#12F7D6] font-plexMono text-[2.5vw] font-medium leading-[3.23vw] capitalize">
-                  4
+                  6
                 </h3>
                 <p className="text-white font-plexMono text-[0.83vw] font-normal leading-[1.04vw]">
                   Programming Language
@@ -184,7 +202,7 @@ const DeveloperProfile = () => {
               </div>
               <div className="flex items-center gap-4">
                 <h3 className="text-[#12F7D6] font-plexMono text-[2.5vw] font-medium leading-[3.23vw] capitalize">
-                  6
+                  4
                 </h3>
                 <p className="text-white font-plexMono text-[0.83vw] font-normal leading-[1.04vw]">
                   Development Tools
@@ -192,7 +210,7 @@ const DeveloperProfile = () => {
               </div>
               <div className="flex items-center gap-4">
                 <h3 className="text-[#12F7D6] font-plexMono text-[2.5vw] font-medium leading-[3.23vw] capitalize">
-                  8
+                  1+
                 </h3>
                 <p className="text-white font-plexMono text-[0.83vw] font-normal leading-[1.04vw]">
                   Years of Experience
@@ -207,6 +225,3 @@ const DeveloperProfile = () => {
 };
 
 export default DeveloperProfile;
-
-
-

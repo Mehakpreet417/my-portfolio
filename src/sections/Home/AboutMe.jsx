@@ -24,8 +24,16 @@ export default function AboutMe() {
               <h2 className="text-[#12F7D6] font-plexMono text-[1.67vw] font-medium leading-[2.19vw] capitalize">Hello!</h2>
               <br />
               <p className="text-[#FFFFFF] font-plexMono text-[0.83vw] font-normal leading-[1.04vw]">
-                My name is Sinan and I specialize in web development that
-                utilizes <span className="text-teal-400">HTML</span>,{" "}
+                My name is Mehakpreet and I am a <span className="text-teal-400">B.tech</span>{" "} 
+                graduate from the <span className="text-teal-400">Indian Institute of Technology, Ropar</span>.  
+                <br />
+                <br />
+                I specialize in Software Development that utilize  <span className="text-teal-400">DSA</span>,{" "}
+                <span className="text-teal-400">C++</span>,{" "}
+                <span className="text-teal-400">SQL</span>,{" "}
+                <span className="text-teal-400">Python</span>,{" "}
+                and Web development that utilize {" "}
+                <span className="text-teal-400">HTML</span>,{" "}
                 <span className="text-teal-400">CSS</span>,{" "}
                 <span className="text-teal-400">JS</span>, and{" "}
                 <span className="text-teal-400">REACT</span> etc.
@@ -36,10 +44,11 @@ export default function AboutMe() {
                 Striving to never stop learning and improving.
                 <br />
                 <br />
-                When I'm not coding, I am{" "}
-                <span className="text-teal-400">writing blogs</span>, reading,
-                or picking up some new hands-on art project like{" "}
-                <span className="text-teal-400">photography</span>.
+                I can work efficiently as a {" "}
+                <span className="text-teal-400">team member</span>{" "}
+                and {" "}
+                <span className="text-teal-400">individually</span>. 
+                I am keen to learn new technologies.
                 <br />
                 <br />
                 I like to have my perspective and belief systems challenged so
