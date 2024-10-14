@@ -61,11 +61,11 @@ export default function AboutMe() {
 
           {/* Image */}
           <div className="w-full md:w-1/3 pr-[3.33vw] m-auto ml-0 " style={{"margin": "auto"}}>
-            <img
+            {/* <img
               src="https://via.placeholder.com/400"
               alt="Sinan Coding"
               className="rounded-[0.83vw] shadow-lg w-full h-full object-cover"
-            />
+            /> */}
           </div>
         </div>
       </div>
