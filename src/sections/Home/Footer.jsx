@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex text-white text-[0.83vw] font-ubuntu leading-[0.94vw] bg-[#292F36] py-[0.83vw] px-[6.67vw] justify-between items-center ">
+    <footer  className="flex text-white text-[0.83vw] font-ubuntu leading-[0.94vw] bg-[#292F36] py-[0.83vw] px-[6.67vw] justify-between items-center ">
       <p>&copy; 2024 MehakpreetChopra. All rights reserved.</p>
       {/* <div className="flex gap-[1.67vw] ">
         <a href="#" className="mx-2 hover:text-teal-300">

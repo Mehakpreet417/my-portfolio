@@ -4,7 +4,7 @@ import Tag from "@/components/Tag";
 
 export default function Blogs() {
   return (
-    <section className="flex px-[6.67vw] py-[5.21vw] flex-col items-center self-stretch bg-[#292F36]">
+    <section id="blogs" className="flex px-[6.67vw] py-[5.21vw] flex-col items-center self-stretch bg-[#292F36]">
       <SectionTitle
         title="Blogs"
         paragraph="My thoughts on technology and business, welcome to subscribe"

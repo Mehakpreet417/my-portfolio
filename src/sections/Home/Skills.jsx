@@ -21,7 +21,7 @@ const SkillsSection = () => {
     prevArrow: <PrevArrow />, // Custom previous arrow
   };
   return (
-    <section
+    <section id="skills"
     className="flex p-[6.67vw] flex-col items-center self-stretch bg-[#292F36] bg-cover bg-no-repeat bg-center"
     style={{ backgroundImage: 'url("/images/Home/Skills.png")' }} >
 

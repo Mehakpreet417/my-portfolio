@@ -14,7 +14,7 @@ const DeveloperProfile = () => {
     document.body.removeChild(link); // Clean up the element after the download
   };
   return (
-    <div className="flex flex-col ">
+    <section id="home" className="flex flex-col ">
       <div className="px-[6.67vw] bg-[#292F36]">
         <hr className="flex justify-center  items-center self-stretch border-t border-[#43454D]" />
       </div>
@@ -220,7 +220,7 @@ const DeveloperProfile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -31,7 +31,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="min-h-screen font-[ubuntu] flex flex-col justify-center items-center bg-[#1A1E23] text-center py-[3.33vw] ">
+    <section id="contact" className="min-h-screen font-[ubuntu] flex flex-col justify-center items-center bg-[#1A1E23] text-center py-[3.33vw] ">
       <SectionTitle
         title="Contact"
         paragraph="I’m currently available for freelance work"
